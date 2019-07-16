@@ -1,0 +1,29 @@
+package com.xms.se.day05;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+/**
+ * collections 是一个Collection集合的工具类 里面封装这关于集合操作特定的方法
+ *  sorta() 给制定的集合按照默认排序方式进行排列
+ * @author Administrator
+ *
+ */
+public class Demo01Collections {
+	public static void method1() {
+		List<String> list = new ArrayList<String>();
+		list.add("a");
+		list.add("d");
+		list.add("b");
+		list.add("f");
+		list.add("g");
+		list.add("z");
+//		按照字符串默认的排序规则排序元素
+		Collections.sort(list);
+		for(String str:list) {
+			
+		}
+	}
+
+}

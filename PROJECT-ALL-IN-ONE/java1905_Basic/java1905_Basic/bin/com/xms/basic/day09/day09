@@ -1,0 +1,55 @@
+
+1.计算一个图形的面积----功能（方法）
+
+2.比较各个图形面积的大小，求出最大值？
+	--只写逻辑，不参与具体的数据
+
+
+1.建立一个类   Shap类---abstract修饰类----无法创建对象
+2.在类中定义方法
+		public abstract void area();
+3.圆形：定义以圆形类  继承Shap类
+		public void area(){
+			System.out.println("圆形的面积");
+		}
+		
+3.矩形：定义以矩形类  继承Shap类
+		public void area(){
+			System.out.println("矩形的面积");
+		}		
+		
+	Shap[] shap=new Shap[?];
+	shap[0]=new Circle();	
+	shap[1]=new Square();	
+	shap[2]=new Shap();
+	.....
+	
+	假设：
+	max=shap[0].area();
+	for(int i=1;i<shap.length;i++){
+		if(max<shap[i].area()){
+			max=shap[i].area();
+		}
+	}
+	 max=?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

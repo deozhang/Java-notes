@@ -1,0 +1,61 @@
+Emp表数据：
+insert into emp_zhang values(1001,'张三丰','Analyst',99999.99,999.99,'2010-03-11',NULL,10);
+insert into emp_zhang values(1002,'张无忌','Programmer',5000,NULL,'2011-07-01',1001,10);
+insert into emp_zhang values(1003,'杨过','Manager',8000,500,'2008-05-15',NULL,10);
+insert into emp_zhang values(1004,'郭靖','Salesman',4500,999,'2009-11-10',1005,20);
+insert into emp_zhang values(1005,'黄蓉','Manager',6000,NULL,'2009-09-01',NULL,20);
+insert into emp_zhang values(1006,'洪七公','Clerk',3000,NULL,'2009-02-01',1005,20);
+insert into emp_zhang values(1007,'韦小宝','Salesman',4000,800,'2009-02-20',NULL,30);
+insert into emp_zhang values(1008,'乔峰','Analyst',8000,600,'2009-06-01',1007,30);
+insert into emp_zhang values(1009,'小龙女','Manager',1500,NULL,'2012-09-10',1008,30);
+insert into emp_zhang values(1010,'段誉','President',15000,100,'2008-02-20',NULL,40);
+insert into emp_zhang values(1011,'孙悟空','Salesman',50000,300,'2010-06-28',1010,40);
+insert into emp_zhang values(1012,'燕小六','Analyst',12000,999.99,'2014-11-11',1010,40);
+
+学生表:
+create table studentinfo(
+stuno int,
+stuname varchar(20),
+stubirth date,
+stusex int,
+stuaddr varchar(30),
+stutel char(11)
+);
+
+insert into studentinfo values(05001,'张三','1988-12-12',0,'江苏南京','12345');
+insert into studentinfo values(05002,'李四','1987-06-05',1,'上海','12346');
+insert into studentinfo values(05003,'王五','1987-12-01',0,'北京','12347');
+insert into studentinfo values(05004,'赵六','1986-02-23',1,'广东深圳','12348');
+insert into studentinfo values(05005,'张三','1988-04-01',0,'重庆','12349');
+insert into studentinfo values(05006,'孙七','1988-07-03',1,'湖北武汉',null);
+
+
+课程表:
+create table classinfo(
+classno int,
+classname varchar(10)
+);
+insert into classinfo values(001,'计算机');
+insert into classinfo values(002,'日语');
+insert into classinfo values(003,'英语');
+
+
+成绩表:
+create table scoreinfo(
+stuno int,
+classno int,
+score double(3,1)
+);
+insert into scoreinfo  values(05001,001,95);
+insert into scoreinfo  values(05001,002,90);
+insert into scoreinfo  values(05001,003,88);
+insert into scoreinfo  values(05002,001,91);
+insert into scoreinfo  values(05002,002,93);
+insert into scoreinfo  values(05002,003,88);
+insert into scoreinfo  values(05003,001,95);
+insert into scoreinfo  values(05003,002,73);
+insert into scoreinfo  values(05003,003,58);
+insert into scoreinfo  values(05004,001,47);
+insert into scoreinfo  values(05004,003,61);
+insert into scoreinfo  values(05005,002,59);
+insert into scoreinfo  values(05005,003,47);

@@ -1,0 +1,133 @@
+package com.xms.se.day05;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Demo05 {
+	public static void method1() {
+		/*
+		 * 语文  	100
+		 * 数学  	99
+		 * 英语	88
+		 * ......
+		 * ......
+		 * String--Integer
+		 */
+		//创建泛型为String-Integer的Map集合
+		Map<String,Integer> map=
+				new HashMap<String,Integer>();
+		//将元素添加到该集合中
+		/*
+		 * put(K,V):
+		 * 
+		 * 1.当添加的元素K在集合中不存在时，
+		 * 	为集合元素添加的功能
+		 * 	返回值为null
+		 * 2.当添加的元素K在集合中存在时，
+		 * 	为集合修改的方法
+		 * 	返回值为对应K被替换到的Value
+		 * 
+		 * 判断存不存在使用equals()比较
+		 * true--存在
+		 * false--不存在
+		 */
+		Integer num1=map.put("语文",100);
+		map.put("数学", 99);
+		map.put("英语", 88);
+		map.put("物理", 77);
+		map.put("化学", 66);
+		map.put("生物", 99);
+		Integer num2=map.put("英语", 55);
+		System.out.println("num1:"+num1);
+		System.out.println("num2:"+num2);
+		System.out.println(map);
+		System.out.println("-----1-------------------------------");
+		/*
+		 * get(K):
+		 * 该方法根据给定的K,获取对应V的值
+		 * 返回值为对应泛型的V值
+		 * 
+		 * 如果给定的K在集合中不存在，则返回值为null
+		 */
+		//存在
+		Integer num3=map.get("语文");
+		System.out.println("num3:"+num3);
+		//不存在
+		Integer num4=map.get("体育");
+		System.out.println("num4:"+num4);
+		System.out.println("---2-----------------------------");
+		/*
+		 * remove(K):
+		 * 根据给定的K，来删除K-V这一行数据
+		 * 返回值为被删除数据的Value值
+		 * 
+		 *  如果集合中不存在该K,则返回值为null
+		 *  
+		 */
+		//存在
+		Integer num5=map.remove("英语");
+		System.out.println("num5:"+num5);
+		System.out.println(map);
+		//不存在
+		Integer num6=map.remove("体育");
+		System.out.println("num6:"+num6);
+		System.out.println("------------------------------");
+		/*
+		 * containsKey(K):
+		 * 该方法通过给定的K，判断集合中是否存在该K值
+		 * 如果存在则返回值为true
+		 * 如果不存在则返回值为false
+		 */
+		//存在
+		boolean bo1=map.containsKey("语文");
+		System.out.println("bo1:"+bo1);
+		//不存在
+		boolean bo2=map.containsKey("体育");
+		System.out.println("bo2:"+bo2);
+	}
+	public static void method2() {
+		
+		/*
+		 * 创建一个学生类
+		 * 姓名，年龄
+		 * 
+		 * 将学生对象作为k,学生的总分v
+		 * 存入到Map集合中
+		 * 
+		 * 1.将new Student("zs",18) 600 总分改成720，
+		 * 2.查询new Student("zs",18)总分为多少分？
+		 */
+		Map<Student,Integer> map=
+				new HashMap<Student,Integer>();
+		map.put(new Student("zs",18), 600);
+	}
+	public static void main(String[] args) {
+		method1();
+	}
+
+}
+
+
+class Student{
+	
+  String name;
+  int  age ;
+public Student(String name, int age) {
+	super();
+	this.name = name;
+	this.age = age;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

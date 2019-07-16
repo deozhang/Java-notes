@@ -1,0 +1,166 @@
+package com.xms.se.day05;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+/**
+ * collections 是一个Collection集合的工具类 里面封装这关于集合操作特定的方法
+ *  sorta() 给制定的集合按照默认排序方式进行排列
+ *  排序接口 Comparable 
+ *  若一个类实现给接口 则表示给类的队形拥有比较资格   
+ *  该列的队形可以实现估计和的比较排序 定义排序规则  创协  compareTo ---比较过日子的方法
+ *  外部比较器  在不修改源码的情况下实现另外一个比较规则 
+ *  当使用该比较规则是 需要将比较的集合和比较规则一起传入sort方法
+ *  什么时候使用外部比较器  当当前比较规则 满足不了需求 在不能修改源码的情况下 
+ * @author Administrator
+ *
+ */
+public class Demo01Collections {
+	public static void method1() {
+		List<String> list = new ArrayList<String>();
+		list.add("a");
+		list.add("d");
+		list.add("b");
+		list.add("f");
+		list.add("g");
+		list.add("z");
+//		按照字符串默认的排序规则排序元素
+		Collections.sort(list);
+		for(String str:list) {
+			System.out.println(list);
+		}
+		
+	}
+	public static void method2() {
+		List<Student> list = new ArrayList<Student>();
+		list.add(new Student("zs",20,90));
+		list.add(new Student("ls",25,95));
+		list.add(new Student("ww",30,96));
+		list.add(new Student("zl",29,10));
+		list.add(new Student("zl",20,70));
+//		遍历
+		for(Student s: list) {
+//			System.out.println(s);
+		}
+		Collections.sort(list);
+		for(Student s :list) {
+		System.out.println(s);
+		}
+		System.out.println("-comparator--排序--age排序--------------------------");
+		ComparatorImple com=new ComparatorImple();
+		Collections.sort(list, com);
+		for (Student student : list) {
+			System.out.println(student);
+		}
+		/*
+		 * 只创建一个该类实现类对象，
+		 * 此时该类就不再使用--即类没有意义
+		 * 
+		 * 使用匿名内部类
+		 */
+//		Comparator<Student> com1=new Comparator<Student>() {
+//			@Override
+//			public int compare(Student o1, Student o2) {
+//				/*
+//				 * 先姓名排，如果姓名一样，按照年龄排
+//				 */
+//				if(!o1.name.equals(o2.name)) {
+//					return o1.name.compareTo(o2.name);
+//				}
+//				
+//				return o2.age-o1.age;
+//			}
+//			
+//		};
+//		Collections.sort(list, com1);
+//		for (Student student : list) {
+//			System.out.println(student);
+//		}
+//		
+//		
+//	}
+//      public static void main(String[]args) {
+////    	  method1();
+//    	  method2();
+//      }
+}
+
+
+
+ class Student implements Comparable<Student> {
+	
+	
+	String name;
+	int age;
+	int score;
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + ", score=" + score + "]";
+	}
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Student(String name, int age, int score) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.score = score;
+	}
+	@Override
+	public int compareTo(Student o) {
+		// TODO Auto-generated method stub
+		return score-o.score;
+	}
+	
+}
+
+// 外部比较器的实现类
+class ComparatorImple implements Comparator<Student>{
+	/*
+	 * 定义比较规则的方法
+	 * 该方法用于使当前对象与给定的对象进行比较
+	 * 返回值为int类型，与值的正负有关，与大小
+	 * 无关
+	 * 
+	 * 根据对象的某个成员变量值比较：
+	 * 
+	 * 1.若o1对象大于o2对象，返回值大于0  升序
+	 * 
+	 * 2.若o1对象小于o2对象，返回值小于0 降序
+	 * 
+	 * 3.若o1对象等于o2对象，返回值等于0 位置不变
+	 */
+	@Override
+	public int compare(Student o1, Student o2) {
+		// TODO Auto-generated method stub
+		return o1.age-o2.age;
+	}
+	
+	
+}
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
