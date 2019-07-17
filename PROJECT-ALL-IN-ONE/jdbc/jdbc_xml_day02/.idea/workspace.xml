@@ -39,8 +39,9 @@
         <entry file="file://$PROJECT_DIR$/src/com/xms/entity/Dept.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding>
+                <element signature="e#97#98#0" expanded="true" />
                 <element signature="e#126#127#0" expanded="true" />
                 <element signature="e#167#168#0" expanded="true" />
                 <element signature="e#203#204#0" expanded="true" />
@@ -57,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/xms/dao/DeptDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="144">
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,15 +70,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xms/dao/impl/DeptDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-288">
-              <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+            <state relative-caret-position="216">
+              <caret line="134" column="16" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#455#461#0" expanded="true" />
-                <element signature="e#1385#1386#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,12 +86,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xms/test/TestCaseDept.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="323">
+              <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#218#219#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,7 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="951" />
     <option name="width" value="975" />
     <option name="height" value="1047" />
@@ -171,6 +169,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Environmental-config/jar-package/mysql/mysql-connector-java-5.1.8-bin.jar!/" />
@@ -193,21 +192,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCaseDept.testFindAll">
-    <configuration name="DButil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xms.util.DButil" />
-      <module name="jdbc_xml_day02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xms.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCaseDept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestCaseDept.TestDelete">
+    <configuration name="TestCaseDept.TestDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_xml_day02" />
       <extension name="coverage">
         <pattern>
@@ -217,28 +203,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.xms.test" />
       <option name="MAIN_CLASS_NAME" value="com.xms.test.TestCaseDept" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCaseDept.a" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jdbc_xml_day02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xms.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xms.test" />
-      <option name="MAIN_CLASS_NAME" value="com.xms.test.TestCaseDept" />
-      <option name="METHOD_NAME" value="a" />
+      <option name="METHOD_NAME" value="TestDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCaseDept.b" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCaseDept.TustUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc_xml_day02" />
       <extension name="coverage">
         <pattern>
@@ -248,7 +219,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.xms.test" />
       <option name="MAIN_CLASS_NAME" value="com.xms.test.TestCaseDept" />
-      <option name="METHOD_NAME" value="b" />
+      <option name="METHOD_NAME" value="TustUpdate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -270,13 +241,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCaseDept.testFindByDeptno" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc_xml_day02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xms.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xms.test" />
+      <option name="MAIN_CLASS_NAME" value="com.xms.test.TestCaseDept" />
+      <option name="METHOD_NAME" value="testFindByDeptno" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCaseDept.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc_xml_day02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xms.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xms.test" />
+      <option name="MAIN_CLASS_NAME" value="com.xms.test.TestCaseDept" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestCaseDept.TestDelete" />
+        <item itemvalue="JUnit.TestCaseDept.TustUpdate" />
+        <item itemvalue="JUnit.TestCaseDept.testInsert" />
+        <item itemvalue="JUnit.TestCaseDept.testFindByDeptno" />
         <item itemvalue="JUnit.TestCaseDept.testFindAll" />
-        <item itemvalue="JUnit.TestCaseDept" />
-        <item itemvalue="JUnit.TestCaseDept.b" />
-        <item itemvalue="JUnit.TestCaseDept.a" />
-        <item itemvalue="Application.DButil" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +294,7 @@
       <option name="presentableId" value="Default" />
       <updated>1563327836546</updated>
       <workItem from="1563327847837" duration="2703000" />
-      <workItem from="1563330635422" duration="5051000" />
+      <workItem from="1563330635422" duration="9485000" />
     </task>
     <task id="LOCAL-00001" summary="Junit test findAll() method success.">
       <created>1563335699885</created>
@@ -300,25 +303,50 @@
       <option name="project" value="LOCAL" />
       <updated>1563335699885</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="success">
+      <created>1563347098344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563347098344</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCaseDept_a - 2019.07.17 at 11h 39m 36s.xml">
-      <configuration name="TestCaseDept.a" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCaseDept_b - 2019.07.17 at 11h 39m 43s.xml">
-      <configuration name="TestCaseDept.b" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCaseDept - 2019.07.17 at 11h 39m 53s.xml">
-      <configuration name="TestCaseDept" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestCaseDept_testFindAll - 2019.07.17 at 11h 47m 48s.xml">
       <configuration name="TestCaseDept.testFindAll" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestCaseDept_testFindByDeptno - 2019.07.17 at 14h 18m 57s.xml">
+      <configuration name="TestCaseDept.testFindByDeptno" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCaseDept_testFindByDeptno - 2019.07.17 at 14h 21m 21s.xml">
+      <configuration name="TestCaseDept.testFindByDeptno" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCaseDept_testFindByDeptno - 2019.07.17 at 14h 22m 32s.xml">
+      <configuration name="TestCaseDept.testFindByDeptno" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCaseDept_testFindByDeptno - 2019.07.17 at 14h 26m 32s.xml">
+      <configuration name="TestCaseDept.testFindByDeptno" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCaseDept_testFindByDeptno - 2019.07.17 at 14h 26m 35s.xml">
+      <configuration name="TestCaseDept.testFindByDeptno" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCaseDept_testInsert - 2019.07.17 at 14h 38m 40s.xml">
+      <configuration name="TestCaseDept.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCaseDept_TustUpdate - 2019.07.17 at 14h 50m 40s.xml">
+      <configuration name="TestCaseDept.TustUpdate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCaseDept_TustUpdate - 2019.07.17 at 14h 52m 04s.xml">
+      <configuration name="TestCaseDept.TustUpdate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCaseDept_TestDelete - 2019.07.17 at 15h 01m 13s.xml">
+      <configuration name="TestCaseDept.TestDelete" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7754000" />
+    <option name="totallyTimeSpent" value="12188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
@@ -334,15 +362,15 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3607908" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2125206" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294893" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3294893" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -358,9 +386,46 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Junit test findAll() method success." />
-    <option name="LAST_COMMIT_MESSAGE" value="Junit test findAll() method success." />
+    <MESSAGE value="success" />
+    <option name="LAST_COMMIT_MESSAGE" value="success" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/db.properties">
@@ -370,31 +435,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xms/dao/DeptDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xms/util/DButil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xms/entity/Dept.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding>
+            <element signature="e#97#98#0" expanded="true" />
             <element signature="e#126#127#0" expanded="true" />
             <element signature="e#167#168#0" expanded="true" />
             <element signature="e#203#204#0" expanded="true" />
@@ -410,26 +456,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xms/test/TestCaseDept.java">
+    <entry file="file://$PROJECT_DIR$/src/com/xms/util/DButil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="1188">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xms/dao/impl/DeptDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        <state relative-caret-position="216">
+          <caret line="134" column="16" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#455#461#0" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xms/test/TestCaseDept.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xms/dao/DeptDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
