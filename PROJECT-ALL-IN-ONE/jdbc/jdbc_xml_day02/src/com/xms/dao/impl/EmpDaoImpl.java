@@ -143,8 +143,9 @@ public class EmpDaoImpl implements EmpDao {
         Connection con = null;
         PreparedStatement ps = null;
         try {
-            con = DButil.getConnection();
+        con = DButil.getConnection();
         String sql = "update emp_zhang set ename=?,position =?,salary=?,bonus=?,hiredate=?,leader=?,deptno=? where empno=?";
+        ps = con.prepareStatement(sql);
         //给问号赋值
         ps.setString(1,emp.getEname());
         ps.setString(2,emp.getPosition());
@@ -170,25 +171,19 @@ public class EmpDaoImpl implements EmpDao {
     @Override
     public void deleteEmp(int empno) {
         Connection conn = null;
-        Statement stmt = null;
+        PreparedStatement ps = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jsd","root","12345678");
-            String sql="delete from emp_zhang where empno="+empno;
-            System.out.println("sql语句为："+sql);
-            stmt = conn.createStatement();
-            stmt.executeUpdate(sql);
+            conn = DButil.getConnection();
+            String sql="delete from emp_zhang where empno=?";
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1,empno);
+            ps.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            try{
-                if(stmt!=null){
-                    stmt.close();
-                }
-                if(conn!=null){
-                    conn.close();
-                }
-            }catch (SQLException e){
+            try {
+                DButil.closeConnection(conn,ps,null);
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }

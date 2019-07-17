@@ -49,7 +49,7 @@ public class TestCase {
 //        }
 //        emp.setLeader(1013);
 //        emp.setDeptno(10);
-//        dao.insertEmp(emp);
+//        dao.updateEmp(emp);
         //测试方法5
 //        dao.deleteEmp(1020);
 //    }
@@ -85,7 +85,7 @@ public class TestCase {
     public void testUpdateEmp(){
         Emp emp = new Emp();
         emp.setEmpno(1025);
-        emp.setEname("Sunny");
+        emp.setEname("Bob");
         emp.setPosition("Clerk1");
         emp.setSalary(1200);
         emp.setBonus(300);
@@ -96,7 +96,11 @@ public class TestCase {
         }
         emp.setLeader(1013);
         emp.setDeptno(10);
-        dao.insertEmp(emp);
+        dao.updateEmp(emp);
+}
+    @Test
+    public void testDeleteEmp(){
+        dao.deleteEmp(1024);
     }
 
 }
