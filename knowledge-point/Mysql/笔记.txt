@@ -1,0 +1,111 @@
+character_set_system:系统元数据(字段名等)存储时使用的编码字符集,该字段和具体存储的数据
+无关。总是固定不变的(utf8),可以不去管它
+
+character_set_server:设置的server级别的(mysqld级别的)字符集。也就是说设置的是一个mysqld的,
+所有字符最后存储时,使用的编码字符集,默认是latin1(拉丁)
+	
+character_set_database:单个数据库级别的字符集设置，该参数允许我们在同一个mysqld下面的不同
+的database使用不同的字符集,创建数据库没有设置默认character_set_server的
+	
+character_set_client:mysql client发送给mysqld的语句使用的编码字符集。可以使用
+default-character-set参数来显示设置。	
+	
+character_set_connection:数字到字符转换时的编码字符集
+
+character_set_results:mysqld在返回查询结果集或者错误信息到client时,使用的编码字符集
+
+set names 'xxx' 命令可以使character_set_client、character_set_connection、
+character_set_results 三者统一
+
+3)三种引擎类型
+InnoDB:一个可靠的事务处理引擎，不支持全文搜索；
+MEMORY:功能等同于MyISAM，但由于数据存储在内存，而不是磁盘中，速度更快，适合于临时表；
+MyISAM:一个性能极高的引擎，它支持全文本检索，但不支持事务处理。
+引擎类型可以混用，例如有些表需要支持事务处理，有些表需要支持全文搜索。
+5.5.5以上默认Engine是Innodb，其他版本默认是MyISAM。
+ps:
+	create table temp(
+	字段 字段类型
+	)ENGINE=InnoDB;
+	
+4)Mysql日期格式
+格式	描述
+%a	缩写星期名
+%b	缩写月名
+%c	月，数值
+%D	带有英文前缀的月中的天
+%d	月的天，数值(00-31)
+%e	月的天，数值(0-31)
+%f	微秒
+%H	小时 (00-23)
+%h	小时 (01-12)
+%I	小时 (01-12)
+%i	分钟，数值(00-59)
+%j	年的天 (001-366)
+%k	小时 (0-23)
+%l	小时 (1-12)
+%M	月名
+%m	月，数值(00-12)
+%p	AM 或 PM
+%r	时间，12-小时（hh:mm:ss AM 或 PM）
+%S	秒(00-59)
+%s	秒(00-59)
+%T	时间, 24-小时 (hh:mm:ss)
+%U	周 (00-53) 星期日是一周的第一天
+%u	周 (00-53) 星期一是一周的第一天
+%V	周 (01-53) 星期日是一周的第一天，与 %X 使用
+%v	周 (01-53) 星期一是一周的第一天，与 %x 使用
+%W	星期名
+%w	周的天 （0=星期日, 6=星期六）
+%X	年，其中的星期日是周的第一天，4 位，与 %V 使用
+%x	年，其中的星期一是周的第一天，4 位，与 %v 使用
+%Y	年，4 位
+%y	年，2 位	
+	
+5)概念
+并发控制：当多个连接对记录进行修改时保证数据的一致性和完整性
+
+共享锁(读锁)：在同一时间段内，多个用户可以读取同一个资源，读取
+过程中数据不会发生任何变化
+
+排他锁(写锁)：在任何时候只能有一个用户写入资源，当进行写锁时
+会阻塞其他的读锁或者写锁操作
+
+锁颗粒:
+表锁：一种开销最小的锁策略
+行锁：一种开销最大的锁策略	
+
+6)case..when使用(行转列)
+//给定的表
+ mno  | mdate      | mre
+------+------------+-----
+    1 | 2005-05-09 | 胜
+    2 | 2005-05-09 | 胜
+    3 | 2005-05-09 | 负
+    4 | 2005-05-09 | 负
+    5 | 2005-05-10 | 胜
+    6 | 2005-05-10 | 胜
+    7 | 2005-05-10 | 负
+
+//查询的结果集	
+| mdate      | 胜 | 负
++------------+----+----
+| 2005-05-09 |  2 |  2
+| 2005-05-10 |  2 |  1	
+
+//表结构
+create table temp(
+mno int,
+mdate date,
+mre varchar(5)
+);
+
+//表数据
+insert into temp values(1,'2005-05-09','胜');
+insert into temp values(2,'2005-05-09','胜');
+insert into temp values(3,'2005-05-09','负');
+insert into temp values(4,'2005-05-09','负');
+insert into temp values(5,'2005-05-10','胜');
+insert into temp values(6,'2005-05-10','胜');
+insert into temp values(7,'2005-05-10','负');
+
