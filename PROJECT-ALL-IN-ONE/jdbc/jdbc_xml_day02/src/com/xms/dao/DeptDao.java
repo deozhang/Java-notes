@@ -9,7 +9,7 @@ public interface DeptDao {
     List<Dept> findAll();
 
     //2.
-    Dept findByDeptno(Dept dept);
+    Dept findByDeptno(int deptno);
     //3.
     void insertDept(Dept dept);
     //4.
