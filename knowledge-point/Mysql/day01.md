@@ -1,6 +1,3 @@
-徐娜娜
-xunana@njrst.com.cn
-
 行Row，也叫Record，用于表示实体数据。
 列Column，也叫字段，用于表示实体属性。
 
@@ -55,7 +52,7 @@ default character set utf8;
 
 4)使用指定的数据库
 use 数据库名;
- 
+
 5)查看表
 show tables;
 
@@ -163,7 +160,7 @@ truncate table dept_zhang;
 总结：DDL
 create:创建表结构
 alter：修改表结构(add增加字段、modify修改字段类型及长度、change修改字段名、drop删除字段)
-	
+
 五、表数据操作(DML)
 ps:语法必须记住！！！
 1)增加数据
@@ -234,5 +231,3 @@ hiredate date,
 leader int,
 deptno int
 );
-
-
