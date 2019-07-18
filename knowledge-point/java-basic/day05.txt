@@ -1,37 +1,34 @@
-»Ø¹Ë£º
-Êý×é£ºÏàÍ¬Êý¾ÝÀàÐÍÔªËØ×é³ÉµÄ¼¯ºÏ
-Êý×éµÄÃ¿¸öÔªËØ¶¼ÓÐ¶ÔÓ¦µÄÔªËØÏÂ±ê£¨0~-1£©
-Êý×éµÄ¶¨Òå£ºÊý×éÒ»µ©¶¨Òå£¬¾Í²»¿É¸ü¸Ä
+æ•°ç»„çš„å®šä¹‰ï¼šæ•°ç»„ä¸€æ—¦å®šä¹‰ï¼Œå°±ä¸å¯æ›´æ”¹
 int[] arr=new int[10];
 int[] arr1=new int[]{};
 int[] arr2={};
 
-Ð´·¨:int arr[]=new int[10];
-³õÊ¼»¯£º
-int[] arr=new int[10];²»ÄÜÔÚ¶¨ÒåµÄÍ¬Ê±³õÊ¼»¯£¬ÓÐ¶ÔÓ¦ÀàÐÍµÄÄ¬ÈÏÖµ
+å†™æ³•:int arr[]=new int[10];
+åˆå§‹åŒ–ï¼š
+int[] arr=new int[10];ä¸èƒ½åœ¨å®šä¹‰çš„åŒæ—¶åˆå§‹åŒ–ï¼Œæœ‰å¯¹åº”ç±»åž‹çš„é»˜è®¤å€¼
 
 int[] arr1=new int[]{};
 int[] arr2={};
-ÕâÁ½ÖÖ¿ÉÒÔÔÚ¶¨ÒåµÄÍ¬Ê±³õÊ¼»¯
+è¿™ä¸¤ç§å¯ä»¥åœ¨å®šä¹‰çš„åŒæ—¶åˆå§‹åŒ–
 
-Êý×éµÄÊôÐÔ£ºlength£¨³¤¶È£¬ÔªËØ¸öÊý£¬¿Õ¼ä´óÐ¡£©
-Í¨¹ý  Êý×éÃû.length  µÄ·½Ê½»ñÈ¡Êý×éµÄÔªËØ¸öÊý£¨³¤¶È£©
-Í¨¹ý   Êý×éÃû[i]  i±íÊ¾ÔªËØÏÂ±êµÄ·½Ê½£¬»ñÈ¡Êý×éÖÐµÄÏÂ±êÎªiµÄÔªËØ
-Êý×éµÄ±éÀú£º
-Í¨¹ýÓëfor´îÅä£¬²é¿´Êý×éµÄÔªËØ
+æ•°ç»„çš„å±žæ€§ï¼šlengthï¼ˆé•¿åº¦ï¼Œå…ƒç´ ä¸ªæ•°ï¼Œç©ºé—´å¤§å°ï¼‰
+é€šè¿‡  æ•°ç»„å.length  çš„æ–¹å¼èŽ·å–æ•°ç»„çš„å…ƒç´ ä¸ªæ•°ï¼ˆé•¿åº¦ï¼‰
+é€šè¿‡   æ•°ç»„å[i]  iè¡¨ç¤ºå…ƒç´ ä¸‹æ ‡çš„æ–¹å¼ï¼ŒèŽ·å–æ•°ç»„ä¸­çš„ä¸‹æ ‡ä¸ºiçš„å…ƒç´ 
+æ•°ç»„çš„éåŽ†ï¼š
+é€šè¿‡ä¸Žforæ­é…ï¼ŒæŸ¥çœ‹æ•°ç»„çš„å…ƒç´ 
 
-Êý×é·½·¨£º
-¸´ÖÆµÄ·½·¨
+æ•°ç»„æ–¹æ³•ï¼š
+å¤åˆ¶çš„æ–¹æ³•
 1.arrcopy
 2.copyof
-×¢Òâ²ÎÊýµÄ±í´ïµÄº¬Òå
+æ³¨æ„å‚æ•°çš„è¡¨è¾¾çš„å«ä¹‰
 
-Ã°ÅÝÅÅÐò
-ÈÃÊý×é½øÐÐÉýÐòÅÅÐò
-Ë«²ãforÑ­»·´îÅä
-for(int i=0;i<arr.length-1;i++){//Ò»¹²Òª¼¸ÂÖ
- for(int j=0;j<arr.length-1-i;j++){//Ã¿ÂÖÑ­»·¼¸´Î
-	if(arr[j]>arr[j+1]){//ÅÅÐò¹æÔòµÄ´¦ÀíÂß¼­
+å†’æ³¡æŽ’åº
+è®©æ•°ç»„è¿›è¡Œå‡åºæŽ’åº
+åŒå±‚forå¾ªçŽ¯æ­é…
+for(int i=0;i<arr.length-1;i++){//ä¸€å…±è¦å‡ è½®
+ for(int j=0;j<arr.length-1-i;j++){//æ¯è½®å¾ªçŽ¯å‡ æ¬¡
+	if(arr[j]>arr[j+1]){//æŽ’åºè§„åˆ™çš„å¤„ç†é€»è¾‘
 		int temp=arr[j+1];
 		arr[j+1]=arr[j];
 		arr[i]=temp;
@@ -41,12 +38,8 @@ for(int i=0;i<arr.length-1;i++){//Ò»¹²Òª¼¸ÂÖ
 }
 
 
-Êý×éÅÅÐòµÄ·½·¨£º
-  sort£¨arr£©·½·¨
-
-½ñÌì£º
-
-·½·¨£º
+æ•°ç»„æŽ’åºçš„æ–¹æ³•ï¼š
+  sortï¼ˆarrï¼‰æ–¹æ³•
 
 
 

@@ -1,10 +1,28 @@
 ## 一、JDBC代码优化
 
-* *.properties file in src  
+> * 在src目录下创建后缀名为properties的文件
+>
+> * 注意文件的编码格式(utf8)  
+> * key=value
+>
 
-* utf8  
-
-* annotations
+> ```java
+> Properties ps=new Properties();
+> 
+> //读文件
+> 
+> //new FileInputStream(new File("src/db.properties"));
+> 
+> ps.load(inputstream);
+> 
+> //取文件
+> 
+> ps.getProperty(String key);
+> 
+> //封装连接，关闭方法
+> 
+> //类名.方法名()直接调用(static修饰)
+> ```
 
 
 
@@ -28,7 +46,7 @@
 
 ```sql
 create table user_zhang(
-id int,
+    id int,
     username varchar(10),
     password varchar(20)
 );
@@ -38,14 +56,14 @@ insert into user_zhang value(2,'sunny','222');
 
 #### 登陆检测
 
-```my
+```mysql
 select * from user_zhang
 where username='' and password='';
 ```
 
 #### 查询结果判断
 
-```mys
+```java
 if(rs.next()){
 //有数据
 System.out.println("登陆成功")；
