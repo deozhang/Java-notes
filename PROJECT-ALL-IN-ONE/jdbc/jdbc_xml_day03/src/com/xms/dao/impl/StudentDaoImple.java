@@ -77,6 +77,7 @@ public class StudentDaoImple implements StudentDao {
             }
             //批处理
             ps.executeBatch();
+
             //事务处理
             conn.commit();
             //清空语句
@@ -88,7 +89,7 @@ public class StudentDaoImple implements StudentDao {
                 ex.printStackTrace();
             }
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 DBCPUtil.releaseConnection(conn,ps,null);
             } catch (SQLException e) {
