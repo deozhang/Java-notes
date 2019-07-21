@@ -1,0 +1,91 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>简单粗暴时间轴</title>
+		<link rel="stylesheet" type="text/css" href="css/time-axis.css"/>
+	</head>
+	<body>
+	
+		<div class="main">
+			 <ul class="time-axis"></ul>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript">
+			//这是要遍历时间轴的数据
+			var dimeAxis=[{
+				date:'2003.10',
+				title:'初涉教育行业',
+				achievement:''
+			},
+			{
+				date:'2010.07',
+				title:'总公司成立',
+				achievement:''
+			},
+			{
+				date:'2010.12',
+				title:'第一套产品《创新大学英语 . 综合教程》系列教材出版 ',
+				achievement:'与华东师范大学出版社战略合作（创新大学英语教学平台）'
+			},
+			{
+				date:'2012.11',
+				title:'《创新大学英语》系列教材荣获“十二五”普通高等教育本科国家级规划教材',
+				achievement:''
+			},
+			{
+				date:'2013.06',
+				title:'与成都理工大战略合作（共同研发在线学习平台）',
+				achievement:'四川创图合作院校超过100所'
+			},
+			{
+				date:'2013.08',
+				title:'《创新高职英语》、《创新机电一体化》等系列教材荣获“十二五”职业教育国家规划教材',
+				achievement:''
+			},
+			{
+				date:'2014.12',
+				title:'成都厚博科技有限公司成立',
+				achievement:''
+			},
+			{
+				date:'2016.08',
+				title:'自主研发“创图教育在线”平台上线',
+				achievement:''
+			},
+			{
+				date:'2017.05',
+				title:'“创图教育在线”在合肥工业大学，重师大，云大等高校应用',
+				achievement:''
+			},
+			{
+				date:'2017.12',
+				title:'“创图教育在线”使用人数超过100万',
+				achievement:''
+			},
+			{
+				date:'2018.04',
+				title:'合作院校及企业超过400家',
+				achievement:''
+			}];
+			
+			
+			$(function(){
+				$.each(dimeAxis,function(i,e){
+					var html='<li class="time-axis-item">'+
+								 '<div class="time-axis-date">'+e.date+'<span></span></div>'+
+								 '<div class="time-axis-title">'+e.title+'</div>'+
+								 '<p class="time-axis-achievement">'+e.achievement+'</p>'+
+							 '</li>';
+					$('.time-axis').append(html);		
+				});
+			});
+		</script>
+		
+	</body>
+</html>
