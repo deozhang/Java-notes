@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.parent{width:500px;height:500px;border:solid 1px #000;margin:0 auto;position:relative;}
+.parent span{float:left;width:100px;height:100px;border-right:dashed 1px #ccc;border-bottom:dashed 1px #ccc;box-sizing:border-box;}
+#box{width:99px;height:99px;background:red;position:absolute;left:0;top:0;}
+</style>
+
+<script>
+window.onload=function(){
+	var oBox=document.getElementById('box');
+	
+	document.onkeydown=function(ev){
+		//alert(ev.keyCode)   //查找键盘值
+		var ev=ev || event;  //ie兼容
+		
+		if(ev.keyCode==37){
+			oBox.style.left=oBox.offsetLeft-100+'px';
+			if(oBox.offsetLeft<0){
+				oBox.style.left=0;
+			}
+		}
+		
+		if(ev.keyCode==39){
+			oBox.style.left=oBox.offsetLeft+100+'px';
+			if(oBox.offsetLeft>400){
+				oBox.style.left='400px';
+			}
+		}
+		
+		
+		if(ev.keyCode==38){
+			oBox.style.top=oBox.offsetTop-100+'px';
+			if(oBox.offsetTop<0){
+				oBox.style.top=0;
+			}	
+		}
+		
+		if(ev.keyCode==40){
+			oBox.style.top=oBox.offsetTop+100+'px';
+			if(oBox.offsetTop>400){
+				oBox.style.top='400px';
+			}	
+		}
+		
+	}
+	
+}
+</script>
+</head>
+
+<body>
+
+<div class="parent">
+	<span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+	<div id="box"></div>
+</div>
+
+</body>
+</html>

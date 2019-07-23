@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0; padding:0;}
+li{list-style:none;}
+
+#menu{width:112px;height:56px;background:#2c323b;margin:0 auto;color:#fff;font-family:'微软雅黑';cursor:pointer;}
+#menu span{width:100%;display:block;height:100%;padding-right:46px;box-sizing:border-box;-moz-box-sizing:border-box;line-height:56px;text-align:right;background:url(down.png) no-repeat 76px center;}
+
+#menu:hover span{background:#0c8ed9 url(top.png) no-repeat 76px center;}
+#menu span:hover{}
+#menu ul{background:#252b34; /*display:none;*/height:0px;transition:0.5s}
+#menu ul li{line-height:40px;text-align:center;}
+#menu ul li:hover{background:#2d343d;}
+#menu:hover ul{/*display:block;*/height:160px;}
+
+</style>
+</head>
+
+<body>
+
+<div id="menu">
+	<span>更多</span>
+    <ul>
+    	<li>电台</li>
+        <li>MV</li>
+        <li>歌单</li>
+        <li>歌手</li>
+    </ul>
+</div>
+</body>
+</html>

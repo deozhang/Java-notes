@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>帧动画</title>
+		<style>
+			div{
+				height:245px;width:245px;
+				background-attachment:fixed;
+				background-repeat:no-repeat;
+			}
+			.c1{background-image:url(1.jpg)}
+			.c2{background-image:url(2.jpg)}
+			.c3{background-image:url(3.jpg)}
+			.c4{background-image:url(4.jpg)}
+			.c5{background-image:url(5.jpg)}
+			.c6{background-image:url(6.jpg)}
+			.c7{background-image:url(7.jpg)}
+			.c8{background-image:url(8.jpg)}
+		</style>
+		<script>
+		var i=1;
+		function f(){
+			var d =document.getElementById("i");
+			d.className="c"+i;
+			i++;
+			if(i>8){i=1;}
+		}
+			
+		window.onload=function(){
+			setInterval(f,100);
+		}
+		</script>
+	</head>
+	<body>
+		<div id="i"></div>
+	</body>
+</html>

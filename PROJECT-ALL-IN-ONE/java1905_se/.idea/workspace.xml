@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5829d36-7e09-47f8-958c-87d3da830230" name="Default Changelist" comment="" />
+    <list default="true" id="e5829d36-7e09-47f8-958c-87d3da830230" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/xms/se/day06/IOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java1905_se/com/xms/se/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java1905_se/com/xms/se/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java1905_se/com/xms/se/DemoImple.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java1905_se/com/xms/se/DemoImple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java1905_se/com/xms/se/day11$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java1905_se/com/xms/se/day11$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java1905_se/com/xms/se/day11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java1905_se/com/xms/se/day11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc/jdbc_xml_day03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc/jdbc_xml_day03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc/jdbc_xml_day04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc/jdbc_xml_day04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc/jdbc_xml_day04/jdbc_xml_day04.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc/jdbc_xml_day04/jdbc_xml_day04.iml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,11 +20,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xms/se/day06/Demo03RandomAccessFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/xms/se/day06/Demo02RandomAccessFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,11 +63,12 @@
         <option value="$PROJECT_DIR$/src/com/xms/se/day10/Student.java" />
         <option value="$PROJECT_DIR$/src/com/xms/se/day10/TestConstructor.java" />
         <option value="$PROJECT_DIR$/src/com/xms/se/day11.java" />
+        <option value="$PROJECT_DIR$/src/com/xms/se/day06/IOTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="947" />
+    <option name="x" value="946" />
     <option name="width" value="981" />
     <option name="height" value="1092" />
   </component>
@@ -51,7 +80,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -70,11 +98,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="se" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java1905_se" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java1905_se" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="day06" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java1905_se" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java1905_se" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="se" type="462c0819:PsiDirectoryNode" />
+              <item name="day06" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo01File.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -98,7 +142,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.day11">
+  <component name="RunManager" selected="Application.IOTest">
     <configuration name="Demo01Doc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xms.se.day01.Demo01Doc" />
       <module name="java1905_se" />
@@ -125,12 +169,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xms.se.day10.TestClass" />
+    <configuration name="IOTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xms.se.day06.IOTest" />
       <module name="java1905_se" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xms.se.day10.*" />
+          <option name="PATTERN" value="com.xms.se.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IOTest" />
         <item itemvalue="Application.day11" />
         <item itemvalue="Application.TestConstructor" />
         <item itemvalue="Application.Demo02String" />
         <item itemvalue="Application.Demo01Doc" />
-        <item itemvalue="Application.TestClass" />
       </list>
     </recent_temporary>
   </component>
@@ -186,14 +230,16 @@
       <updated>1563586824947</updated>
       <workItem from="1563586828674" duration="16027000" />
       <workItem from="1563719165549" duration="663000" />
+      <workItem from="1563855941666" duration="2441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16690000" />
+    <option name="totallyTimeSpent" value="19131000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1273" y="-7" width="1295" height="704" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2905569" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -204,8 +250,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3294893" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3970346" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5694444" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39583334" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -239,6 +285,12 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/xms/se/day06/IOTest.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -356,28 +408,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xms/se/day10/TestConstructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xms/se/day11.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="32" selection-start-line="32" selection-start-column="2" selection-end-line="35" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xms/se/day10/TestConstructor.java">
+    <entry file="file://$PROJECT_DIR$/src/com/xms/se/day06/IOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        <state relative-caret-position="704">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xms/se/day06/Demo03RandomAccessFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xms/se/day06/Demo02RandomAccessFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-end-line="10" />
         </state>
       </provider>
     </entry>
