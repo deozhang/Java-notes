@@ -295,7 +295,7 @@ public class wroldPanel1  extends JPanel implements Runnable,KeyListener {
 		hero.step();
 	}
          public void musicAction() {
-        	 File file1 = new File("‪‪‪C:\\Users\\wang\\Music\\a.wav");
+        	 File file1 = new File("‪‪‪C:\\Users\\deo\\Music\\a.wav");
              AudioClip sound1;
         		
 	     try {

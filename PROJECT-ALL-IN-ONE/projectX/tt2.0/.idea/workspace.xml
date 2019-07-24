@@ -2,13 +2,139 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="755e506e-ee7d-43e3-920b-391785ba7d71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ttkp/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ttkp/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ttkp/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ttkp/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ttkp/ttkp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ttkp/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tt/ttkp/Award.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tt/ttkp/Award.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tt/ttkp/Background.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tt/ttkp/Background.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tt/ttkp/Coin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tt/ttkp/Coin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tt/ttkp/Enemies.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tt/ttkp/Enemies.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tt/ttkp/GoldAward.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tt/ttkp/GoldAward.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tt/ttkp/Ground.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tt/ttkp/Ground.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tt/ttkp/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tt/ttkp/Hero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tt/ttkp/SuperClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tt/ttkp/SuperClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tt/ttkp/myworld.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tt/ttkp/myworld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tt/ttkp/wroldPanel1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tt/ttkp/wroldPanel1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/Award.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/Background.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/Coin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/Enemies.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/GoldAward.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/Ground.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/Hero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/SuperClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/a.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/gameover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/ground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/jin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading1_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/loading_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/myworld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/start.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/start1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/t1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/timi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/wroldPanel1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/z.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/bin/ttkp/zhangaiwu.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tt/tt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tt/tt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ttkp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/gameover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/ground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/jin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading1_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/loading_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/start.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/start1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/t1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/timi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/z.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ttkp/src/zhangaiwu.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/web基础/day01/html基础.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../knowledge-point/web/web基础/day01/html基础.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/bs-timeline/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/bs-timeline/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/bs-timeline/css/timeline.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/bs-timeline/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/bs-timeline/js/j1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/.idea/时间轴.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/css/history.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/images/clock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/images/date.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/images/point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/images/vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/js/history.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/js/j1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/js/jquery.easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/js/jquery.mousewheel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/时间轴/new_file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/站长之家时间线效果/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/站长之家时间线效果/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/站长之家时间线效果/js/j1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/站长之家时间线效果/js/jquery.min_v1.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/简单粗暴时间轴/css/time-axis.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/简单粗暴时间轴/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../knowledge-point/web/素材/简单粗暴时间轴/js/jquery-1.7.2.min.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,16 +144,34 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/myworld.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
+            <state relative-caret-position="132">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tt/.classpath">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tt/.project">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tt/.settings/org.eclipse.core.resources.prefs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -41,6 +185,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tt/ttkp/ttkp/Award.java" />
+        <option value="$PROJECT_DIR$/tt/.settings/org.eclipse.core.resources.prefs" />
       </list>
     </option>
   </component>
@@ -64,6 +209,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -74,12 +220,11 @@
             <path>
               <item name="tt2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="tt" type="462c0819:PsiDirectoryNode" />
-              <item name="ttkp" type="462c0819:PsiDirectoryNode" />
+              <item name=".settings" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tt2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="tt" type="462c0819:PsiDirectoryNode" />
-              <item name="ttkp" type="462c0819:PsiDirectoryNode" />
               <item name="ttkp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -87,7 +232,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -142,29 +286,24 @@
       <option name="presentableId" value="Default" />
       <updated>1563933631372</updated>
       <workItem from="1563933635370" duration="1713000" />
+      <workItem from="1563960540543" duration="229000" />
+      <workItem from="1563961539704" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1713000" />
+    <option name="totallyTimeSpent" value="1966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.03793382" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1953188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.3294893" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3294893" />
@@ -172,15 +311,21 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3294893" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
       <window_info id="Image Layers" order="0" />
@@ -239,72 +384,18 @@
     <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/a.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/Award.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/Background.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/GoldAward.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/wroldPanel1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/SuperClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/Coin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/Award.java" />
+    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/Background.java" />
+    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/GoldAward.java" />
+    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/wroldPanel1.java" />
+    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/SuperClass.java" />
+    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/Coin.java" />
     <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/coin.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/Enemies.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/Ground.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/Hero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/Enemies.java" />
+    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/Ground.java" />
+    <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/Hero.java" />
     <entry file="file://$PROJECT_DIR$/tt/bin/ttkp/Hero.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3841" />
@@ -351,9 +442,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tt/.classpath">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tt/.settings/org.eclipse.core.resources.prefs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tt/.project">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/tt/ttkp/ttkp/myworld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
+        <state relative-caret-position="132">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>

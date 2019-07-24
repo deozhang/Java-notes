@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style>
+			a{
+				/* 去除下划线 */
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- span:行内分区 -->
+		态度<span style="color: red;">决定</span>一切
+		<!-- 水平线 -->
+		<hr />
+		<!-- 删除线 -->
+		<del>删除线</del>
+		<!-- 下划线 -->
+		<u>下划线</u>
+		<br/>
+		<!-- 定义锚点 -->
+		<a name="top">锚点:文档中的某个记号,用于链接到页面的某个位置</a>
+		<!-- 链接锚点 -->
+		<a href="#top">链接锚点</a>
+		<br />
+		<!-- 空格 -->
+		空&nbsp;&nbsp;格
+		<!-- 小于号 -->
+		&lt;
+		<!-- 大于号 -->
+		&gt;
+		<!-- 与符号 -->
+		&amp;
+		<!-- 列表 -->
+		
+		<img src="" width="400px" border="10px"
+		 title="图片注释" alt="找不到图片"/>
+		 <!-- 超链接 -->
+		 <a href="http://www.deozhang.com" target="_blank">target为跳转方式</a>
+		 
+		 <!-- 
+		 无序列表:默认实心圆ul
+		 type="disc实心圆|circle空心圆|square实心矩形|none无"
+		 
+		 有序列表:默认数字ol
+		  type="1数字|a小写字母|A大写字母|i小写罗马数字|I大写罗马数字"
+		  -->
+		  <ol type="I">
+			  <li style="float: left;margin-right: 1.25rem;"><a href="http://www.deozhang.com">苍井空</a></li>
+			  <li style="float: left;margin-right: 1.25rem;"><a href="http://www.deozhang.com">罗玉凤</a></li>
+			  <li style="float: left;margin-right: 1.25rem;"><a href="http://www.deozhang.com">苍井空</a></li>
+			  <li>泷泽萝拉</li>
+		  </ol>
+		  
+	</body>
+</html>
