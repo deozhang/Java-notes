@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DOM操作2</title>
+	</head>
+	<body>
+		<div>
+			<span>我是span</span>
+			<p>我是p</p>
+		</div>
+	</body>
+	<script>
+		var divEle = document.getElementsByTagName("div")[0];
+		// console.log(divEle);
+		//读取
+		var html1 = divEle.innerHTML;
+		var text1 = divEle.innerText;
+		console.log(html1);
+		console.log(text1);
+		
+		//修改
+		// divEle.innerHTML = "<div>我是新增的div</div>";
+		// divEle.innerText = "<div>我是新增的div</div>";
+		
+		
+	</script>
+</html>

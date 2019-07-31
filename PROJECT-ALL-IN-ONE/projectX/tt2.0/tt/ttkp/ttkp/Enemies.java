@@ -5,7 +5,6 @@ import java.awt.image.BufferedImage;
 
 /**
  * µ–»À¿‡
- * @author yingc
  *
  */
 public class Enemies extends SuperClass implements Award{

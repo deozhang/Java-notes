@@ -5,8 +5,6 @@ import java.awt.image.BufferedImage;
 
 /**
  * 地板类
- * @author yingc
- *
  */
 public class Ground extends SuperClass implements Award{
 	// 私有属性
@@ -44,9 +42,7 @@ public class Ground extends SuperClass implements Award{
 	
 	@Override
 	public int getAwardType() {
-		
-		return 200;
-		
+		return 200;		
 	}
 
 	

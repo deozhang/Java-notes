@@ -5,7 +5,6 @@ package ttkp;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-
 import javax.imageio.ImageIO;
 
 public abstract class SuperClass {

@@ -19,7 +19,7 @@ public class Background extends SuperClass{
 		super(wroldPanel1.WIDTH,wroldPanel1.HEIGHT, 0,0,-4);
 		x1 = -wroldPanel1.WIDTH;
 	}
-	
+
 	
 	@Override
 	public void step() {
@@ -35,9 +35,7 @@ public class Background extends SuperClass{
 
 	@Override
 	public BufferedImage getImage() {
-		
 		return images;
-		
 	}
 
 	@Override

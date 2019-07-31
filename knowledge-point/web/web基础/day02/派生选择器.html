@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>派生选择器</title>
+		<style>
+			/* 后代选择器  使用空格 */
+/* 			div span{
+				color: red;
+			} */
+			/* 子元素选择器 使用大于号 */
+			/* div>span{
+				color: darkblue;
+			} */
+			/* 下一个弟弟选择器 使用加号 */
+			div+span{
+				color: #FF0000;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>我是div的儿子p标签
+				<span>我是p里面的span标签</span>
+			</p>
+			<span>我是div里面的span标签</span>
+			<p>我是div里面的p标签</p>
+		</div>
+		<span>我是div的弟弟span1标签</span>
+		<span>我是div的弟弟span2标签</span>
+	</body>
+</html>

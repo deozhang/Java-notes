@@ -24,10 +24,10 @@ public class wroldPanel1  extends JPanel implements Runnable,KeyListener {
 	public static final int RUN = 1; // 运行状态
 	public static final int PAUSE = 2; // 暂停状态
 	public static final int GAME_OVER = 3; //游戏结束状态
-	public static final int COMPOSING_WIDTH = 2400;  //排版宽度
+	public static final int COMPOSING_WIDTH = 2400;//排版宽度
 	
 	/**私有属性**/
-	private static int state = START;  // 游戏状态'
+	private static int state = START;  // 游戏状态
 	// 游戏开始图片
 	private static BufferedImage start;
 	// 游戏暂停图片
@@ -174,9 +174,9 @@ public class wroldPanel1  extends JPanel implements Runnable,KeyListener {
 	int enterIndex2 = enterIndex - COMPOSING_WIDTH/6;//-400
 	int index = 0;
 	
-	// 入场
+	// 入场???
 	public void enterAction() {
-		if(enterIndex++%600 == 0) {
+		if(enterIndex++ %600 == 0) {
 			SuperClass[] obj = nextOneBigAward();
 			// 数组扩容
 			award = Arrays.copyOf(award, award.length+obj.length);
@@ -245,7 +245,7 @@ public class wroldPanel1  extends JPanel implements Runnable,KeyListener {
 		for (int i = 0; i < award.length; i++) {
 			SuperClass s = award[i];// 临时变量s存储金币对象
 			if(!s.outOfBounds() && s.isLife()) {
-				awardLives[index++] = s;
+				awardLives[index++] = s;//?????
 			}
 		}
 		award = Arrays.copyOf(awardLives, index);

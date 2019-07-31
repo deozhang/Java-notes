@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>浮动定位</title>
+		<style>
+			div{
+				width: 6.25rem;
+				height: 6.25rem;
+			}
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.c{
+				width: 31.25rem;
+				height: 31.25rem;
+				background-color: pink
+			}
+			.c{
+				float: right;
+			}
+			.c1{
+				background-color: red;
+			}
+			.c1{
+				float: right;
+				clear: left;
+			}
+			.c2{
+				background-color: yellow
+			}
+			.c2{
+				float: right;
+				clear: right;
+			}
+			.c3{
+				background-color: blue
+			}
+			.c3{
+				clear: right;
+			}
+			.c4{
+				background-color: green
+			}
+		</style>
+	</head>
+	<body>
+		<div class="c">
+			<div class="c2"></div>
+			<div class="c3"></div>
+			<div class="c4"></div>
+			<div class="c1"></div>
+		</div>
+
+	</body>
+</html>

@@ -2,9 +2,7 @@ package ttkp;
 
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
-
 import javax.imageio.ImageIO;
-
 
 public class Hero extends SuperClass{
 	// 各动作状态
@@ -17,7 +15,7 @@ public class Hero extends SuperClass{
 	// 开关
 	boolean flyingOnce; // 控制只滑翔一次开关
 	boolean changeHero; // 改变英雄开关
-	// 位移变量
+	// 位移变量 
 	private double t; // s = v0*t + 0.5*g*t*t
 	private int v0;
 	private int g;

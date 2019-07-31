@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DOM操作2</title>
+		<style>
+			.p1{
+				color:deeppink;
+			}
+			.big{
+				font-size: 1.5625rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<span>我是span</span>
+			<p>我是p</p>
+		</div>
+	</body>
+	<script>
+		//获取/修改样式
+		var pEle = document.getElementsByTagName("p")[0];
+		// console.log(pEle.style);
+		// pEle.style = "color:red;"
+		// pEle.style.color = "#0000FF";
+		// pEle.style = "font-size:50px;";
+		// pEle.style.fontSize = "50px";
+		
+		//获取/修改属性
+		// pEle.align = "center";
+		
+		//通过函数修改读取属性/样式
+		// pEle.setAttribute("style","color:red");
+		// console.log(pEle.getAttribute("style"));
+		
+		//动态修改样式效果
+		// pEle.className = "p1 big";//多个类用空格分开
+		
+	</script>
+</html>

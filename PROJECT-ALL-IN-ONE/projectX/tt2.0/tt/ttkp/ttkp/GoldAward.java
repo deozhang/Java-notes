@@ -5,7 +5,6 @@ import java.awt.image.BufferedImage;
 
 /**
  * ½ğ±ÒÀà
- * @author yingc
  *
  */
 public class GoldAward extends SuperClass implements Award{

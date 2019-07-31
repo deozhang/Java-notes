@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<script>
+			function f(){
+				var inputNum = document.getElementById("t").value;
+				inputNum==50?alert("正好"):inputNum>50?alert("大了"):alert("小了");
+			}
+			function f1(inputNum){
+				inputNum==50?alert("正好"):inputNum>50?alert("大了"):alert("小了");
+			}
+
+		</script>
+	</head>
+	<body>
+		<input type="text" id="t" name="test"  /><br />
+		<input type="button" value="与50判断" onclick="f()" /><br />
+		<input type="text" id="t1" name="test"  onblur="f1(this.value)" /><br /><br />
+		<input type="text" id="t2" name="check" /><br />
+		<input type="button" value="统计" onclick="f2(this.value)" /><br />
+		<input type="button" value="替换" onclick="f3(this.value)"/><br />
+	</body>
+</html>

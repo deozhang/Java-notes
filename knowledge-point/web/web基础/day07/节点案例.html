@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>节点案例</title>
+	</head>
+	<body>
+		<select></select>
+	</body>
+		<script>
+			//江苏(用innerHTML属性)
+			var seEle = document.querySelector("select");
+			seEle.innerHTML = "<option>江苏</option>"
+			//浙江(用函数添加)
+			var opzEle = document.createElement("option");
+			opzEle.innerText = "浙江";
+			opzEle.value = "zj";
+			seEle.appendChild(opzEle);
+			//安徽(添加在浙江之前)
+			opaEle = document.createElement("option");
+			opaEle.innerText = "安徽";
+			opaEle.value = "ah";
+			seEle.insertBefore(opaEle,opzEle);
+		</script>
+</html>

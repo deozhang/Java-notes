@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>轮播图</title>
+		<style>
+			img{
+				width: 12.5rem;
+			}
+			.h{
+				display: none;
+			}
+			.s{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="1.jpg" class="s"/>
+		<img src="2.jpg" class="h"/>
+		<img src="3.jpg" class="h"/>
+	</body>
+	<script>
+		//调用一次显示一张图片
+		var current = 0;//标记
+		function showImg(){
+			//找图片节点
+			var imgEles = document.getElementsByTagName("img");
+			//遍历图片节点
+			for(var i=0;i<imgEles.length;i++){
+				if(current==i){
+					imgEles[i].className = "s";
+				}else{
+					imgEles[i].className = "h";
+				}
+			}
+			current++;
+			//循环继续从第一张图片开始
+			if(current==3){
+				current = 0;
+			}
+		}
+		//周期性定时器
+		setInterval(showImg,1000);
+	</script>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js数据类型</title>
+		<script>
+			//number类型
+			var age = 20;
+			console.log(age);
+			console.log(typeof age);
+			
+			var salary = 94.2;
+			console.log(salary);
+			console.log(typeof salary);
+			//string类型
+			var name = "digedeodeodeodige";
+			console.log(name);
+			console.log(typeof name);
+			
+			console.log(name.indexOf("dige",10));
+			
+			console.log(name.replace("deo","sunny"));
+			
+			//boolean类型
+			var tag = true;
+			console.log(tag);
+			console.log(typeof(tag));
+			
+			console.log(tag + tag);
+			
+			//undefined
+			var x;
+			console.log(x);
+			console.log(typeof x);
+			
+			var a = 1;//全局变量
+			function f(){
+				var b = "dige";//局部(私有)变量
+				a = "deo";
+				console.log(b);
+			}
+			f();
+			console.log(a);
+			
+			console.log(parseInt(12.23));
+			console.log(parseInt("12.23"));
+			console.log(parseInt("aaa12.23"));//NaN
+			console.log(parseInt("12.23aaa"));//12
+			
+			console.log(typeof parseFloat("34.12aaa"));
+			console.log(isNaN(12));
+			console.log(isNaN("12"));
+			
+			function j(){
+				/**
+				 * document.getElementById("id值")
+				 * 从页面中根据id的值查找指定的节点
+				 * document.getElementById("id值").value = 值
+				 * 从页面中根据id找到节点的value值
+				 */
+				var inputNumber = document.getElementById("i").value;
+				if(isNaN(inputNumber)||inputNumber==""){
+					alert("请输入数字");
+				}else{
+					var squ = inputNumber*inputNumber;
+					alert(inputNumber+"平方为:"+squ);
+				}
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		请输入数字：<input type="text" id="i"/><br />
+		<input type="button" value="求平方" onclick="j()" />
+	</body>
+</html>

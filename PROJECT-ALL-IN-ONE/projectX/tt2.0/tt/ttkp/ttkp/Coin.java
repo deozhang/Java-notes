@@ -2,11 +2,8 @@ package ttkp;
 
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
-
 /**
  * 金币类
- * @author yingc
- *
  */
 public class Coin extends SuperClass implements Award{
 	// 私有属性
@@ -44,9 +41,7 @@ public class Coin extends SuperClass implements Award{
 	
 	@Override
 	public int getAwardType() {
-		
 		return 100;
-		
 	}
 
 

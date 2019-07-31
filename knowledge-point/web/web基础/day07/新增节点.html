@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>新增节点</title>
+	</head>
+	<body>
+	</body>
+	<script>
+		//给页面body添加一个p节点(html内容)
+		document.body.innerHTML = "<p>我是新增的p节点</p>";
+		
+		//创建div节点
+		var divEle = document.createElement("div");
+		divEle.innerText = "我是新增的div节点"
+		//追加
+		document.body.appendChild(divEle);
+		
+		//旧节点为参考点
+		var divEle2 = document.createElement("div");
+		divEle2.innerText = "我是新增的第二个div节点";
+		
+		var pEle = document.getElementsByTagName("p")[0];
+		document.body.insertBefore(divEle2,pEle);
+		
+		var spanEle = document.createElement("span");
+		spanEle.innerText = "新增的span节点";
+		
+		var spanEle2 = document.getElementsByTagName("span")[0];
+		divEle2.insertBefore(spanEle,spanEle2);
+		
+		//删除指定的节点
+		divEle2.removeChild(spanEle2);
+		document.body.removeChild(pEle);
+	</script>
+</html>
