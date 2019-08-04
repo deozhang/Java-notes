@@ -1,0 +1,26 @@
+@charset "utf-8";
+html,body,div,ul{
+	padding: 0rem;
+	margin: 0rem;
+}
+
+html,body{
+	/* 相对父节点,没有父节点窗口100% */
+	height: 100%;
+}
+
+body{
+	font: 14px "微软雅黑";
+}
+
+/* 图片logo位置 */
+body>img{
+	padding: 0.625rem 0rem;
+	margin-left: 0.625rem;
+}
+
+/* 中间内容区域 */
+.main{
+	border: 5px solid #f69fa;
+	height: 90%;
+}
