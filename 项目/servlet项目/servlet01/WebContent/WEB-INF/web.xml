@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>servlet01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 配置HelloServlet,servlet根据配置文件寻找Java类 -->
+  <servlet>
+  	<!-- 定义名称 -->
+  	<servlet-name>helloServlet</servlet-name>
+  	<!-- 配置servlet组件类路径 -->
+  	<servlet-class>web.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <!-- 定义名称,servlet-mapping和servlet成对出现,并且名称一致 -->
+  <servlet-name>helloServlet</servlet-name>
+  <!-- 配置访问路径 -->
+  <url-pattern>/sayHello</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<!-- 定义名称 -->
+  	<servlet-name>dateServlet</servlet-name>
+  	<!-- 配置servlet组件类路径 -->
+  	<servlet-class>web.DateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<!-- 定义名称 -->
+  	<servlet-name>dateServlet</servlet-name>
+  	<url-pattern>/date</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
