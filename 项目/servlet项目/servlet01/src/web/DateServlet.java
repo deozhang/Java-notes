@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class DateServlet extends HttpServlet {
 	public void service(HttpServletRequest req,HttpServletResponse res)
-	throws DateTimeException,IOException,ServletException{
+	throws IOException,ServletException{
 		Date date = new Date();
 		//获取字符输出流
 		PrintWriter out = res.getWriter();

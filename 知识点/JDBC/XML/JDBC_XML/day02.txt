@@ -1,0 +1,94 @@
+回顾:
+JDBC工作过程:
+1)加载驱动创建连接
+2)创建语句对象(Statement、PreparedStatement)
+3)执行SQL语句(增删改查)
+4)处理结果集(查询操作)
+5)关闭资源
+
+一、JDBC代码优化
+创建以.properties后缀文件
+1)默认放src目录下(重要)
+2)存放数据按照key=value形式
+3)修改文件的编码utf-8
+4)注释以#开头
+
+实战演示:部门表
+select * from dept_xu;
+
+select * from dept_xu where deptno=10;
+
+insert into dept_xu values(60,'','');
+String sql="insert into dept_xu values("
++dept.getDeptno()+",'"+dept.getDname()
++"','"+dept.getLocation()+"')";
+
+update dept_xu set dname='',location=''
+where deptno=10;
+String sql="update dept_xu set dname='"
++dept.getDname()+"',location='"
++dept.getLocation()+"' where deptno="
++dept.getDeptno()+"";
+
+二、语句对象
+Statement:主要用于执行静态SQL语句，即SQL语句
+内容固定不变的语句。每执行一次都要对传入SQL
+语句进行编译，效率比较低。
+
+PreparedStatement:某种情况下，SQL只是其中的参数
+不同，其他的子句都是相同的，这种适合用
+PreparedStatement语句对象。
+PreparedStatement语句对象能够预防
+SQL注入问题(安全性)。
+
+PreparedStatement是接口，继承Statement,SQL语句
+会提前编译，修改常用方法，方法不需要参数。
+
+PreparedStatement实例包含事先编译好的SQL语句，
+SQL语句可以有一个或多个IN参数，IN参数的值是
+SQL语句创建时未被指定，此语句为每个IN参数保留
+一个问号(作为占位符)，每个问号的值必须在此
+语句被执行之前，通过适当的setXXX()方法提供。
+
+重构员工表(Statement->PreparedStatement)
+Emp->EmpDao->EmpDaoImpl->TestCase
+
+update emp_xu set ename=?,position=?,salary=?,bonus=?,hiredate=?,leader=?,deptno=? where empno=?
+
+//创建表
+create table user_xu(
+id int,
+username varchar(10),
+password varchar(20)
+);
+insert into user_xu values(1,'张三','666');
+insert into user_xu values(2,'李四','888');
+
+//登录检测(查询操作)
+select * from user_xu where username='' and password='';
+
+
+String sql="select * from user_xu where username='"+username+"' and password='"+pwd+"'";
+
+//查询结果判断
+if(rs.next()){
+//有数据
+System.out.print("登录成功");
+}else{
+//没有数据
+System.out.print("登录失败");
+}
+
+练习:
+1)完善好课堂代码
+2)完成"登录检测"操作
+
+
+
+
+
+
+
+
+
+

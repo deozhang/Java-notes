@@ -1,0 +1,133 @@
+JDBC技术
+Java Database Connectivity:Java访问数据库的解决
+方案
+希望以相同方式访问不同的数据库，以实现与具体
+数据库无关的JAVA操作。
+
+JDBC定义一套标准的接口，即访问数据库API。不同
+的数据库厂商根据各自数据库特点去实现接口，从而
+得到JAVA程序访问。
+
+JDBC接口:
+DriverManger:驱动管理
+Connection:连接接口
+Statement:语句对象
+PreparedStatement
+ResultSet:结果集
+
+JDBC工作过程:[重要]
+1)加载驱动创建连接
+2)创建语句对象
+3)执行SQL语句
+4)处理结果集(查询操作)
+5)关闭资源
+
+实战演示:(员工表emp_xu)
+ps:
+表->封装实体对象
+记录->具体对象实例
+字段->实例属性
+
+创建包:分包
+com.xms
+	   .entity 实体类
+	   .dao 业务逻辑代码
+		   EmpDao:接口
+		   .impl 实现类
+	   .test 测试
+
+操作:(增删改查)
+//1、查询全部员工信息
+select * from emp_xu;
+List<Emp> findAll();
+
+//2、根据员工号查询员工信息
+select * from emp_xu where empno=1004;
+Emp findByEmpno(int empno);
+
+//3、增加一条员工信息
+insert into emp_xu values(1022,'张三','Clerk',1200,600,日期,1013,10);
+void insertEmp(Emp emp);
+
+String sql="insert into emp_xu values("
++emp.getEmpno()+",'"+emp.getEname()
++"','"+emp.getPosition()+"',"
++emp.getSalary()+","+emp.getBonus()
++",date_format('"
++new Date(emp.getHiredate().getTime())
++"','%X-%m-%d'),"+emp.getLeader()+","
++emp.getDeptno()+")";
+
+sql语句:
+insert into emp_xu values(1022,'张三',
+'Clerk',1200.0,300.0,
+date_format('2019-07-16','%X-%m-%d'),
+1013,10)
+
+i值:1
+
+//4、更新一条记录
+update emp_xu set ename='',position='',salary=1200,bonus=300,hiredate=date_format('','%X-%m-%d'),leader=1013,deptno=10 where empno=1004;
+void updateEmp(Emp emp);
+
+String sql="update emp_xu set ename='"
++emp.getEname()+"',position='"
++emp.getPosition()+"',salary="
++emp.getSalary()+",bonus="+emp.getBonus()
++",hiredate=date_format('"
++new Date(emp.getHiredate().getTime())
++"','%X-%m-%d'),leader="+emp.getLeader()
++",deptno="+emp.getDeptno()
++" where empno="+emp.getEmpno()+"";
+
+sql语句:
+update emp_xu set ename='张三1',
+position='Clerk1',salary=1000.0,
+bonus=600.0,
+hiredate=date_format('2019-07-12','%X-%m-%d'),
+leader=1012,deptno=20 where empno=1022
+
+//5、删除一条记录
+delete from emp_xu where empno=1004;
+void deleteEmp(int empno);
+
+//JDBC连接Mysql核心代码
+//加载驱动可以不写，创建连接时会自动找合适的
+驱动类(建议直接写)
+Class.forName("com.mysql.jdbc.Driver");
+Connection con=DriverManager.getConnection(
+"jdbc:mysql://127.0.0.1:3306/jsd", 
+	"root", "1234");
+说明:
+localhost表示本机，用IP地址127.0.0.1
+3306表示Mysql端口号
+jsd表示指定库
+Connection只是接口，真正的实现由数据库厂商
+提供的驱动包完成。
+
+//语句对象
+Statement st=con.createStatemet();
+//执行SQL语句
+ResultSet rs=st.executeQuery(sql);//查询
+int i=st.executeUpdate(sql);//增加、更新、删除
+
+//结果集
+ResultSet执行查询SQL语句返回的结果集。查询结果
+存放ResultSet对象的一系列行中，最初位于行首。
+rs.next()用于在行间移动
+rs.getXXX(数字|字段名)用于取数据
+
+练习:
+1)完善好课堂代码
+2)实现部门表中5个方法操作(增删改查)
+
+
+
+
+
+
+
+
+
+
+
