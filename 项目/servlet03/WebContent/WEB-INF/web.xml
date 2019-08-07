@@ -10,6 +10,21 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
+  <!-- 字符集过滤器 -->
+  <filter>
+  	<filter-name>charsetEncodingFilter</filter-name>
+  	<filter-class>filter.CharsetEncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>CharsetEncoding</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>charsetEncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
   <servlet>
   	<servlet-name>addAdminServlet</servlet-name>
   	<servlet-class>web.AddAdminServlet</servlet-class>
