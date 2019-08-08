@@ -15,8 +15,6 @@ public class DBUtil {
 		try {
 		    Class.forName("com.mysql.jdbc.Driver");
 		    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jsd?characterEncoding=UTF-8", "root","12345678");
-		    String sql = "select * from admin";
-		    PreparedStatement ps = con.prepareStatement(sql);
 		} catch (Exception e) {
 		    e.printStackTrace();
 		}
@@ -28,7 +26,6 @@ public class DBUtil {
 			try {
 				con.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}

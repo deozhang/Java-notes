@@ -15,6 +15,7 @@ import javax.xml.ws.http.HTTPException;
 import dao.AdminDAO;
 import dao.AdminDAOImpl;
 import entity.Admin;
+import factory.DAOFactory;
 
 public class LoadAdminServlet extends HttpServlet{
 	public void service(HttpServletRequest req,HttpServletResponse res)
@@ -27,7 +28,7 @@ public class LoadAdminServlet extends HttpServlet{
 		int id = Integer.parseInt(req.getParameter("id"));
 		
 		try {
-			AdminDAO dao = new AdminDAOImpl();
+			AdminDAO dao = (AdminDAO) DAOFactory.getInstance("AdminDAO");
 			Admin admin = dao.findById(id);
 				
 		    if(admin!=null) {
@@ -40,7 +41,7 @@ public class LoadAdminServlet extends HttpServlet{
 				out.print("昵称<input name='username' value='"+username+"'/><br/>");
 				out.print("密码<input name='password' value='"+password+"'/><br/>");
 				out.print("姓名<input name='realname' value='"+realname+"'/><br/>");
-				out.print("<input type='submit' name='submit' value='Submit'>");
+				out.print("<input type='submit' name='submit' value='提交'>");
 				out.print("</form>");
 		    }
 			

@@ -1,4 +1,4 @@
-package web;
+ package web;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,6 +11,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.ws.http.HTTPException;
+
+import dao.AdminDAO;
+import dao.AdminDAOImpl;
+import entity.Admin;
+import factory.DAOFactory;
 
 public class AddAdminServlet extends HttpServlet{
 	public void service(HttpServletRequest req,HttpServletResponse res) 
@@ -26,17 +31,11 @@ public class AddAdminServlet extends HttpServlet{
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
 		String realname = req.getParameter("realname");
-		//入库
-		Connection con = null;
+
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jsd?characterEncoding=UTF-8","root","12345678");
-			String sql = "insert into admin values (null,?,?,?)";
-			PreparedStatement ps = con.prepareStatement(sql);
-			ps.setString(1, username);
-			ps.setString(2, password);
-			ps.setString(3, realname);
-			ps.execute();
+			AdminDAO dao = (AdminDAO) DAOFactory.getInstance("AdminDAO");
+			Admin admin = new Admin(username,password,realname);
+			dao.add(admin);
 			//提示用户
 			out.print("添加成功");
 			out.print("<br/><a href='list'>查看列表</a>");
@@ -44,17 +43,7 @@ public class AddAdminServlet extends HttpServlet{
 			res.sendRedirect("list");
 		} catch (Exception e) {
 			e.printStackTrace();
-		}finally {
-			if(con!=null) {
-				try {
-					con.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
-			}
 		}
-		
-		
 	}
 }
 

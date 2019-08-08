@@ -13,6 +13,7 @@ import javax.xml.ws.http.HTTPException;
 
 import dao.AdminDAO;
 import dao.AdminDAOImpl;
+import factory.DAOFactory;
 
 public class DelAdminServlet extends HttpServlet{
 	public void service(HttpServletRequest req,HttpServletResponse res)
@@ -23,7 +24,7 @@ public class DelAdminServlet extends HttpServlet{
 		int id = Integer.parseInt(req.getParameter("id"));
 
 		try {
-			AdminDAO dao = new AdminDAOImpl();
+			AdminDAO dao = (AdminDAO) DAOFactory.getInstance("AdminDAO");
 			dao.del(id);
 		    res.sendRedirect("list");
 		} catch (Exception e) {

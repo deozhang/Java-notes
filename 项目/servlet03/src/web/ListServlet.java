@@ -19,6 +19,7 @@ import com.mysql.jdbc.Driver;
 import dao.AdminDAO;
 import dao.AdminDAOImpl;
 import entity.Admin;
+import factory.DAOFactory;
 
 public class ListServlet extends HttpServlet {
 	public void service(HttpServletRequest req,HttpServletResponse res)
@@ -29,7 +30,7 @@ public class ListServlet extends HttpServlet {
 		//查询数据
 		
 		try {
-			AdminDAO dao = new AdminDAOImpl();
+			AdminDAO dao = (AdminDAO) DAOFactory.getInstance("AdminDAO");
 			List<Admin> list = dao.findAll();
 			out.print("<table border='1px'>");
 			out.print("<tr><td>序号</td><td>昵称</td><td>密码</td><td>姓名</td><td>删除</td></tr>");

@@ -33,8 +33,7 @@ public class AdminDAOImpl implements AdminDAO {
 	}
 
 	@Override
-	public void add() throws Exception {
-		Admin admin = null;
+	public void add(Admin admin) throws Exception {
 		Connection con = DBUtil.getConnection();
 		String sql = "insert into admin values (null,?,?,?)";
 		PreparedStatement ps = con.prepareStatement(sql);

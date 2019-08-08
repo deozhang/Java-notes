@@ -8,7 +8,7 @@ public interface AdminDAO {
 	//查询所有记录
 	public List<Admin> findAll() throws Exception;
 	//添加管理员
-	public void add() throws Exception;
+	public void add(Admin admin) throws Exception;
 	//根据id删除管理员
 	public void del(int id) throws Exception;
 	//根据id查询管理员

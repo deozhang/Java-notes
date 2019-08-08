@@ -8,6 +8,22 @@ public class Admin {
 	public int getId() {
 		return id;
 	}
+	public Admin() {
+		super();
+	}
+	public Admin(String username, String password, String realname) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.realname = realname;
+	}
+	public Admin(int id, String username, String password, String realname) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.realname = realname;
+	}
 	public void setId(int id) {
 		this.id = id;
 	}
