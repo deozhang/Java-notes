@@ -1,6 +1,4 @@
-# Java-Full-Stack
-The way of how to become a "Java Full Stack Developer".
-# Java学习路线
+# Java全栈学习路线
 ## JavaSE01
 * [Object类](
         javaAPI/Object类.md
